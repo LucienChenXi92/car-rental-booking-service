@@ -88,6 +88,11 @@ public class RentalOrderServiceImpl implements RentalOrderService {
             throw new RuntimeException("Not a valid rental order.");
         }
 
+        // Can not updated a closed rental order
+        if (rentalOrderDO.getRentalActualEndTime() != null) {
+            throw new RuntimeException("Can not update a closed rental order.");
+        }
+
         // To keep it sample, we only allow to update rentalActualEndTime to close rental order
         if (rentalOrderVO.getRentalActualEndTime() == null) {
             throw new RuntimeException("Rental order actual end time can not be null.");

@@ -19,7 +19,7 @@ public interface StockRepository extends JpaRepository<StockDO, Long> {
             + "WHERE s.current_rental_order_id = -1;", nativeQuery = true)
     List<StockView> findAllAvailable();
 
-    @Query(value = "SELECT * FROM stock s WHERE s.car_id = ?1 AND s.current_rental_order_id = -1 LIMIT 1;",
+    @Query(value = "SELECT * FROM stock s WHERE s.car_id = ?1 AND s.current_rental_order_id = -1 LIMIT 1 FOR UPDATE;",
             nativeQuery = true)
     StockDO findFirstAvailable(Long carId);
 
