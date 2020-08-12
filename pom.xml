@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.lucien</groupId>
-    <artifactId>car-rental</artifactId>
+    <artifactId>car-rental-booking-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>car-rental</name>
+    <name>car-rental-booking-service</name>
     <description>Demo project for a car rental system</description>
 
     <properties>
@@ -68,6 +68,12 @@
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
             <version>2.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>1.10.19</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 

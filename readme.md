@@ -26,21 +26,19 @@ This service is implemented base on SpringMVC + Spring-boot + JPA + MySQL.
 | delete | tinyint | NO | | |
 
 **NOTICE**  
-+ Field `rental_actual_end_time` is null by default. Only when customers return cars to the company, then it will be assigned a non-null timestamp.
-So, this field can help to indicate the order status.  
-+ Field `delete` is actually a soft delete solution, when customs delete specific order, the delete value will turn to `1`.  
-+ Only when field `rental_actual_end_time` is non-null, can customers delete rental orders.
+Field `rental_actual_end_time` is null by default. Only when customers return cars to the company, then it will be assigned a non-null timestamp. So this field can help to indicate the order status.  
+Field `delete` is actually a soft delete solution, when customs delete specific order, the delete value will turn to `1`.  
+Only when field `rental_actual_end_time` is non-null, can customers delete rental orders.
 
-**TABLE - stock**
+**TABLE - stock**  
 | Field | Type | Null | Key | Extra |
 | -- | -- | -- | -- | -- | -- |
 | stock_id | smallint | NO | PRI | auto_increment |
 | car_id | smallint | No | | |
 | current_rental_order_id | smallint | YES | | |
 
-> **NOTICE**:
-> Field `current_rental_order_id` 
-> 
+**NOTICE**  
+Because the business scenario is car rental, so each stock is very expensive and should be easy to track. So I added a field `current_rental_order_id` under into stock table. Default value is `"-1"` and it means available, when this stock is in used, will sync the rental_order_id here, with this, it will be easy to track the situation.
 
 **TABLE - car**
 | Field | Type | Null | Key | Extra | 
@@ -55,4 +53,4 @@ So, this field can help to indicate the order status.
 ![api-spec.png](/docs/api-specs.png)
 
 
-####
+#### 
