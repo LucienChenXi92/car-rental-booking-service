@@ -32,7 +32,7 @@ Only when field `rental_actual_end_time` is non-null, can customers delete renta
 
 **TABLE - stock**  
 | Field | Type | Null | Key | Extra |
-| -- | -- | -- | -- | -- | -- |
+| -- | -- | -- | -- | -- |
 | stock_id | smallint | NO | PRI | auto_increment |
 | car_id | smallint | No | | |
 | current_rental_order_id | smallint | YES | | |
