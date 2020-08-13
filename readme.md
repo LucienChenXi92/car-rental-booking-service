@@ -1,6 +1,8 @@
 
 # Car Rental Booking Service
 
+[Live Demo](http://demo.lucienchen.xyz)
+
 ### Scope
 
 This is a simple car rental booking API service, it provides Restful APIs to support `customers` to search/create/update/delete their rental orders. 
@@ -49,7 +51,7 @@ Because the business scenario is car rental, so each stock is very expensive and
 | cost_per_day | decimal(4,2) | YES | |
 
 #### APIs Spec
-[Swagger Entrance](http://www.lucienchen.xyz:8080/service/swagger-ui.html)
+[Swagger entrance](http://service.lucienchen.xyz/swagger-ui.html#/)
 ![api-spec.png](/docs/api-specs.png)
 
 
