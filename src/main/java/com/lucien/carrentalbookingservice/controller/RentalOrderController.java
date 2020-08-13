@@ -14,6 +14,7 @@ import java.util.List;
 import static org.apache.commons.lang3.Validate.notNull;
 
 @RestController
+@CrossOrigin(value = "*")
 @Api(tags = "Rental Order Controller", description = "Provide Rental Order related APIs")
 public class RentalOrderController {
 

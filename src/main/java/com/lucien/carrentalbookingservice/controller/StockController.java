@@ -6,6 +6,7 @@ import com.lucien.carrentalbookingservice.service.StockService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,6 +16,7 @@ import java.util.List;
 import static org.apache.commons.lang3.Validate.notNull;
 
 @RestController
+@CrossOrigin(value = "*")
 @Api(tags = "Stock Controller", description = "Provide stock related APIs")
 public class StockController {
 
