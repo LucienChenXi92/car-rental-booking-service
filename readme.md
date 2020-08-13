@@ -49,7 +49,7 @@ Because the business scenario is car rental, so each stock is very expensive and
 | cost_per_day | decimal(4,2) | YES | |
 
 #### APIs Spec
-
+[Swagger Entrance](http://www.lucienchen.xyz:8080/service/swagger-ui.html)
 ![api-spec.png](/docs/api-specs.png)
 
 
