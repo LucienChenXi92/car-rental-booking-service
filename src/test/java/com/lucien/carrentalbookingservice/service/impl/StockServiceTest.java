@@ -1,7 +1,7 @@
 package com.lucien.carrentalbookingservice.service.impl;
 
 import com.lucien.carrentalbookingservice.entity.StockWithCarInfo;
-import com.lucien.carrentalbookingservice.exeception.SystemException;
+import com.lucien.carrentalbookingservice.exception.SystemException;
 import com.lucien.carrentalbookingservice.model.StockVO;
 import com.lucien.carrentalbookingservice.repository.StockRepository;
 import com.lucien.carrentalbookingservice.service.StockService;

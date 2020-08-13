@@ -1,4 +1,4 @@
-package com.lucien.carrentalbookingservice.exeception;
+package com.lucien.carrentalbookingservice.exception;
 
 public class SystemException extends RuntimeException {
 

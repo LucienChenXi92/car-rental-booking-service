@@ -2,7 +2,7 @@ package com.lucien.carrentalbookingservice.service.impl;
 
 import com.lucien.carrentalbookingservice.entity.RentalOrderDO;
 import com.lucien.carrentalbookingservice.entity.StockDO;
-import com.lucien.carrentalbookingservice.exeception.SystemException;
+import com.lucien.carrentalbookingservice.exception.SystemException;
 import com.lucien.carrentalbookingservice.model.CreateRentalOrderVO;
 import com.lucien.carrentalbookingservice.model.RentalOrderVO;
 import com.lucien.carrentalbookingservice.model.UpdateRentalOrderVO;
