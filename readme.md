@@ -1,17 +1,19 @@
 
-# Car Rental Booking Service
+# Car Rental Booking System
 
-[Live Demo](http://demo.lucienchen.xyz)
+### User Scenario
+
+[Live Demo](http://demo.lucienchen.xyz)  
+When talking about rental booking system, I believe there are two baisc user scenarios, the first one is to let customers to go through all the car information including what kinds of car they can rent and how many car left in the stock. And the second one is base on these info, customers should be able to make an order, close order, or even delete an order. Considering we only have 4 days to implement this system, so we won't expand any other user scenarios.
 
 ### Scope
 
-This is a simple car rental booking API service, it provides Restful APIs to support `customers` to search/create/update/delete their rental orders. 
-The core of this service is to constantly maintain stock information when process rental orders. So, in order to keep this project as simple as possible, 
-we only keep three modules `rental order`, `stock` and `car`. As for `payment`, `customer` modules are not in scope. 
+The core business of a booking system is to constantly maintain stock information when process rental orders. So, in order to keep this system as simple as possible, we only keep three modules `rental order`, `stock` and `car`. As for `payment`, `customer` modules are not in scope. 
 
 ### Design
 
-This service is implemented base on SpringMVC + Spring-boot + JPA + MySQL.
+This service is implemented base on SpringMVC + Spring-boot + JPA + MySQL.  
+![architecture](/docs/architecture.png) 
  
 #### DB Schema
 
@@ -51,8 +53,6 @@ Because the business scenario is car rental, so each stock is very expensive and
 | cost_per_day | decimal(4,2) | YES | |
 
 #### APIs Spec
-[Swagger entrance](http://service.lucienchen.xyz/swagger-ui.html#/)
+[Swagger entrance](http://service.lucienchen.xyz/swagger-ui.html#/)  
 ![api-spec.png](/docs/api-specs.png)
 
-
-#### 

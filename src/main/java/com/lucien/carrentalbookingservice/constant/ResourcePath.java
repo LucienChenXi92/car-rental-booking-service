@@ -11,6 +11,6 @@ public class ResourcePath {
 
     // stock resources
     public static final String GET_ALL_AVAILABLE_STOCK = "/api/available-stocks";
-    public static final String GET_ALL_STOCK = "api/stocks";
+    public static final String GET_ALL_STOCK = "/api/stocks";
     public static final String GET_STOCK = "/api/stock/{id}";
 }
