@@ -13,7 +13,7 @@ The core business of a booking system is to constantly maintain stock informatio
 ### Design
 
 This service is implemented base on SpringMVC + Spring-boot + JPA + MySQL.  
-![architecture](/docs/architecture.png) 
+![architecture](./docs/architecture.png) 
  
 #### DB Schema
 
@@ -55,4 +55,4 @@ Because the business scenario is car rental, so each stock is very expensive and
 #### APIs Spec
 
 [Swagger entrance](http://www.lucienchen.xyz:8080/service/swagger-ui.html)  
-![api-spec.png](/docs/api-specs.png)
+![api-spec.png](./docs/api-specs.png)
